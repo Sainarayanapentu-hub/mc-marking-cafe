@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Marking Cafe</title>
+    <header>
+    <div class="logo"><h2>Marketing Cafe</h2></div>
+    <!-- Navigation -->
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('business')">Business</button>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+  </header>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      font-family: Arial, sans-serif; line-height: 1.6;
+      background: #ffffff00;
+      color: #333;
+    }
+     header {
+      background: #111;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: #ffffff;
+    }
+    .hero-text {
+      flex: 1;
+      padding: 20px;
+    }
+    .hero-text h1 {
+      color: orange;
+      font-size: 42px;
+    }
+    .hero-text p { margin-top: 10px; color: #686666; }
+    .hero img {
+      flex: 1;
+      max-width: 500px;
+      width: 100%;
+    }
+    /* Navigation bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 15px;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin: 0 15px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav button:hover {
+      color: #ff9800;
+    }
+
+    /* Page sections */
+    .page {
+      display: none;
+      padding: 50px;
+      text-align: center;
+      height: calc(100vh - 60px);
+    }
+
+    .active {
+      display: block;
+    }
+
+    #home {
+      background: #dbeafe;
+    }
+
+    #business {
+      background: #fde68a;
+    }
+
+    #about {
+      background: #bbf7d0;
+    }
+
+    #contact {
+      background: #fecdd3;
+    }
+    /* Services */
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .services h2 { margin-bottom: 20px; }
+    .service-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service-icons div {
+      background: orange;
+      color: #fff;
+      padding: 20px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* Cards Section */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 50px 20px;
+      background: #111;
+      color: #fff;
+    }
+    .card {
+      flex: 1;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 250px;
+    }
+    .card h3 { color: orange; margin-bottom: 10px; }
+    .card p { margin-bottom: 15px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: orange;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  
+  
+
+  <!-- Pages -->
+  <section id="home" class="hero" class="services">
+    <div class="hero-text">
+      <h2>We are</h2>
+      <h1>Marketing Cafe</h1>
+      <p>The Outsourced Marketing Department – we help you improve productivity by managing key marketing functions.</p>
+    </div>
+    <img src="https://via.placeholder.com/500x300" alt="Hero Image">
+  </section>
+
+  <section id="business" class="page">
+    <h1>Business Page</h1>
+    <p>Details about business go here.</p>
+  </section>
+
+  <section id="about" class="page">
+    <h1>About Us</h1>
+    <p>Information about us.</p>
+  </section>
+
+  <section id="contact" class="page">
+    <h1>Contact Us</h1>
+    <p>Contact details here.</p>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      // Hide all pages
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+
+      // Show the clicked page
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

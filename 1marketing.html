@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Cafe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+    /* Header */
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: #fff;
+    }
+    .hero-text {
+      flex: 1;
+      padding: 20px;
+    }
+    .hero-text h1 {
+      color: orange;
+      font-size: 42px;
+    }
+    .hero-text p { margin-top: 10px; color: #444; }
+    .hero img {
+      flex: 1;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    /* Services */
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .services h2 { margin-bottom: 20px; }
+    .service-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service-icons div {
+      background: orange;
+      color: #fff;
+      padding: 20px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* Cards Section */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 50px 20px;
+      background: #111;
+      color: #fff;
+    }
+    .card {
+      flex: 1;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 250px;
+    }
+    .card h3 { color: orange; margin-bottom: 10px; }
+    .card p { margin-bottom: 15px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: orange;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><h2>Marketing Cafe</h2></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Business</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>We are</h2>
+      <h1>Marketing Cafe</h1>
+      <p>The Outsourced Marketing Department – we help you improve productivity by managing key marketing functions.</p>
+    </div>
+    <img src="https://via.placeholder.com/500x300" alt="Hero Image">
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services That We Provide</h2>
+    <div class="service-icons">
+      <div>Sales</div>
+      <div>Marketing</div>
+      <div>Consulting</div>
+      <div>B2B</div>
+      <div>Lead Gen</div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards">
+    <div class="card">
+      <h3>We Offer Quality Under Restraint</h3>
+      <p>Businesses that have been running successfully for more than 5 years with steady clientele are classified as Medium Enterprises.</p>
+      <a href="#" class="btn">Explore More</a>
+    </div>
+    <div class="card">
+      <h3>Startups & Growth</h3>
+      <p>Businesses in the startup phase with limited capital and annual revenue up to INR 600 million are classified as SMEs.</p>
+    </div>
+  </section>
+
+</body>
+</html>
